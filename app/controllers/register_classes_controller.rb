@@ -21,6 +21,6 @@ class RegisterClassesController < ApplicationController
     end
 
     def find_registraion
-        @register = RegisterClass.find(params[:id])
+        @register = RegisterClass.find(params[:course_id])
     end
 end
