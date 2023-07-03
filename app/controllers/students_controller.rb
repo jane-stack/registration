@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
     end
 
     def show
-        render json: @student
+        render json: @student, serializer: StudentWithCoursesSerializer
     end
 
     # POST /signup
