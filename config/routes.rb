@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   get '/user', to: 'students#user'
 
   # Sessions
-  post '/login', to 'sessions#create'
-  delete '/logout', to 'sessions#destroy'
-  
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

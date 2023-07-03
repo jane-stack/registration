@@ -9,11 +9,12 @@ class SessionsController < ApplicationController
             render json: student
         else
             render json: { errors: ["Username or Password didn't match"] }, status: :unprocessable_entity
+        end
     end
 
     # DELETE /logout
     def destroy
         session.delete :student_id
-        render json: { message: "Successfully Logged Out" }
+        render json: { message: "You've Logged Out" }
     end
 end
